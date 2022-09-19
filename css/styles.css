@@ -1,0 +1,44 @@
+h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    padding: 20px;
+}
+
+/* ABOUT PAGE */
+
+.about-section {
+    background-color: #fff;
+    max-width: 1000px;
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.image {
+    max-height: 270px;
+    border-radius: 20px;
+}
+
+@media(max-width:768px){
+
+    .about-section {
+        background-color: #FFF4F4;
+        margin: auto;
+    }
+
+    .about-content {
+        display:block;
+        text-align: center;
+    }
+}

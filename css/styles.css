@@ -7,11 +7,10 @@ h1 {
 
 p {
     padding: 20px;
+    max-width: 1000px;
 }
 
-/* ABOUT PAGE */
-
-.about-section {
+.section {
     background-color: #fff;
     max-width: 1000px;
     margin: 50px auto;
@@ -19,15 +18,51 @@ p {
     padding: 20px;
 }
 
-.about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-}
+/* IMAGES */ 
 
 .image {
     max-height: 270px;
     border-radius: 20px;
+}
+
+.larger-image {
+    max-width: 450px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    height: 40px;
+    margin: 5px;
+}
+
+/* BUTTONS */ 
+
+button {
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid;
+    padding: 10px;
+    background-color: #e6fefe;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #bbfcfc;
+    transition-duration: 1s;
+}
+
+/* ABOUT PAGE */
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
 }
 
 @media(max-width:768px){
@@ -40,5 +75,66 @@ p {
     .about-content {
         display:block;
         text-align: center;
+    }
+}
+
+/* CONTACT PAGE */ 
+
+.error-message {
+    display: none;
+    color: red;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+#form {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+#message {
+    height: 200px;
+}
+
+label {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+input {
+    margin-top: 5px;
+    border-radius: 20px;
+    border: solid 1px;
+    padding: 5px;
+}
+
+/* FOOTER */ 
+
+footer {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.footer-div {
+    text-align: center;
+    padding: 5px;
+
+}
+
+@media(max-width:768px){
+    
+    footer {
+        display: block;
+    }
+
+    .logo2{
+        display: none;
     }
 }

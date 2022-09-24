@@ -90,7 +90,7 @@ body {
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        background-color: rgb(241, 251, 246);
+        background-color: #e6fefe;
     }
 
     .nav-item {
@@ -105,6 +105,10 @@ body {
     .nav-branding {
         justify-content: center;
         margin: auto;
+    }
+
+    .home-paragraph {
+        display: none;
     }
 }
 

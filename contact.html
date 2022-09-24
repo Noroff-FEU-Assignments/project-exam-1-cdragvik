@@ -35,7 +35,62 @@
     </header>
 
     <main>  
-        <h1>Contact</h1>
-    </main>
+        <section class="section">
+            <h1>Contact</h1>
+            <p>I there is something you are missing or you have suggestions about the blog, I am open to input. 
+            Use the contact form below. I look forward to hearing from you!
+            </p>
+            <div class="center"><img src="images/chef-frankie4.jpeg" class="larger-image" alt=""/></div>
+            <form id="form">
 
+                <div class="contact">
+                    <label for="name">Name (minimun 5 characters):</label>
+                    <input type="text" id="name" name="name"/>
+                    <div class="error-message" id="nameError">The name must be at least 5 characters</div>
+                </div>
+
+                <div class="contact">
+                    <label for="email">Email (required):</label>
+                    <input type="text" id="email" name="email"/>
+                    <div class="error-message" id="emailError">Please enter a valid email address</div>
+                </div>
+
+                <div class="contact">
+                    <label for="name">Subject (minimum 15 characters):</label>
+                    <input type="text" id="subject" name="subject"/>
+                    <div class="error-message" id="subjectError">The subject must be at least 15 characters</div>
+                </div>
+
+                <div class="contact">
+                    <label for="name">Message (minimum 25 characters):</label>
+                    <input type="text" id="message" name="message"/>
+                    <div class="error-message" id="messageError">The message must be at least 25 characters</div>
+                </div>
+
+                <button>Send message</button>
+            </form>
+            <script src="js/contact.js"></script>
+        </section>
+        
+      </main>
+
+      <footer>
+        <div class="footer-div">
+          <h3>Information</h3>
+          <li>Frankies Kitchen</li>
+          <li>email@frankieskitchen.com</li>
+        </div>
+        <div class="footer-div">
+          <img src="images/frankieskitchen.png" class="logo logo2" alt="Frankies Kitchen logo"/>
+        </div>
+        <div class="footer-div">
+          <h3>Follow me</h3>
+          <img src="icons/facebook.jpeg" class="icon"/>
+          <img src="icons/instagram.jpeg" class="icon"/>
+          <img src="icons/twitter.jpeg" class="icon"/>
+        </div>
+      </footer>
+  
+    </body>
     <script src="js/hamburger.js"></script>
+  </html> 

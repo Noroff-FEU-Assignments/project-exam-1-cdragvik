@@ -1,9 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'avenir next', Arial, Helvetica, sans-serif;
     font-size: 20px;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -44,7 +44,7 @@ a{
 }
 
 .nav-link:hover {
-    color: red;
+    text-decoration: underline;
 }
 
 body {
@@ -111,22 +111,3 @@ body {
         display: none;
     }
 }
-
-.home {
-    text-align: center;
-    background-image: url("../images/home_page_image_2.jpg");
-    min-height: 350px;
-    background-size: cover;
-}
-
-.home-paragraph {
-    font-size: 35px;
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.703);
-    border-radius: 20px;
-    padding: 10px;
-}
-

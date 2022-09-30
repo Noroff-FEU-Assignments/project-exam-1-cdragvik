@@ -1,6 +1,7 @@
 
-const recipesContainer = document.querySelector(".recipes");
+const recipesContainer = document.querySelector(".reci");
 const loadmore = document.querySelector(".loadmore");
+const loader = document.querySelector(".loader");
 let currentPage = 0;
 
 
@@ -15,16 +16,16 @@ async function getRecipes(){
         if (Number(maxpages) === currentPage) {
             loadmore.style.display = "none"; 
         }
-
-        
+        loader.style.display ="none";
 
         for (let i = 0; i < getRecipes.length; i++) {
             function createHTML(getRecipes){
-                recipesContainer.innerHTML += `<a href="blogpost.html?id=${getRecipes[i].id}"><div class="recipes-box"> 
+                recipesContainer.innerHTML += `<div class="recipes">
+                    <a href="blogpost.html?id=${getRecipes[i].id}"><div class="recipes-box"> 
                     <img src="${getRecipes[i].better_featured_image.source_url}" class="image">
                     <h2>${getRecipes[i].title.rendered}</h2>
-                </div></a>
-                `;
+                    </div></a>
+                    </div>`;
         }
         createHTML(getRecipes);
 
@@ -32,7 +33,7 @@ async function getRecipes(){
     }
     } catch(error){
         console.log(error);
-        recipesContainer.innerHTML = `<div class="error">Ups! An error has occured</div>`;
+        recipesContainer.innerHTML = `<div class="error">Ups! An error has occured. Please try again later.</div>`;
     }
 }
 

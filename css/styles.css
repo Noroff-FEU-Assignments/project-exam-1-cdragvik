@@ -27,6 +27,18 @@ p {
     margin: 50px auto;
     border-radius: 20px;
     padding: 20px;
+    align-items: center;
+}
+
+.error {
+    color: red;
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(255, 0, 0, 0.083);
 }
 
 /* IMAGES */ 
@@ -34,12 +46,23 @@ p {
 .image {
     max-height: 270px;
     border-radius: 20px;
+    margin: auto;
+    display: block;
 }
 
 .larger-image {
     max-width: 450px;
     border-radius: 20px;
     margin: 20px;
+}
+
+.res-image {
+    height: 500px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
 }
 
 .center {
@@ -60,13 +83,14 @@ p {
 /* BUTTONS */ 
 
 button {
-    margin: 20px;
+    margin: 20px auto;
     border-radius: 20px;
     border: 1px solid;
     padding: 10px;
     background-color: #e6fefe;
     text-transform: uppercase;
     text-align: center;
+    display: flex;
 }
 
 button:hover {
@@ -98,40 +122,42 @@ button:hover {
 
 /* RECIPES */ 
 
-.recipes {
+.reci {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1000px;
-    place-items: center;
+    justify-content: center;
     margin: auto;
 }
 
 .recipes-box {
     background-color: #fff;
     padding: 20px;
-    margin: 10px;
     border-radius: 20px;
     width: 350px;
+    height: 400px;
+    margin: 10px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
 .recipes-box:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-@media(max-width:1023px){
-
-    .recipes {
+@media(max-width:1100px){
+    .reci {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        place-items: center;
     }
 }
 
 @media(max-width:767px){
-
-    .recipes {
+    .reci {
         display: grid;
         grid-template-columns: 1fr;
+        place-items: center;
     }
 }
     

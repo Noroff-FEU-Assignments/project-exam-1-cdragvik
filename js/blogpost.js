@@ -3,6 +3,7 @@ const blogContainer = document.querySelector(".blogpost");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
+const loader = document.querySelector(".loader");
 
 console.log(id);
 
@@ -23,8 +24,6 @@ async function details() {
 
         console.log(res.id);
 
-        blogContainer.innerHTML += "";
-
         blogContainer.innerHTML += `<div class="section"> 
                                     <h1>${res.title.rendered}</h1>
                                     <img src="${res.better_featured_image.source_url}" onclick="onClick(this)" class="modal-hover-opacity res-image">
@@ -36,6 +35,8 @@ async function details() {
                                     </div>
                                     <p>${res.content.rendered}</p>
                                     </div>`;
+        
+        loader.style.display = "none";
 
     } catch(error) {
         blogContainer.innerHTML = `<div class="error">Ups! An error has occured.</div>`;
@@ -48,3 +49,4 @@ function onClick(element) {
     document.getElementById("img").src = element.src;
     document.getElementById("modal").style.display = "block";
   }
+

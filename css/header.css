@@ -44,7 +44,9 @@ a{
 }
 
 .nav-link:hover {
-    text-decoration: underline;
+    background-color: #e6fefe;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 body {
@@ -67,6 +69,7 @@ body {
 }
 
 @media(max-width:768px){
+    
     .hamburger{
         display: block;
     }
@@ -107,7 +110,5 @@ body {
         margin: auto;
     }
 
-    .home-paragraph {
-        display: none;
-    }
+   
 }

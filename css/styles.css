@@ -7,9 +7,9 @@ h1 {
 
 h2 {
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 23px;
     text-align: center;
-    padding: 20px;
+    padding-bottom: 10px;
 }
 
 p {
@@ -44,25 +44,38 @@ p {
 /* IMAGES */ 
 
 .image {
-    max-height: 270px;
+    max-width: 270px;
     border-radius: 20px;
     margin: auto;
     display: block;
+    padding: 10px;
 }
 
 .larger-image {
-    max-width: 450px;
+    max-width: 80%;
     border-radius: 20px;
     margin: 20px;
 }
 
 .res-image {
-    height: 500px;
+    max-height: 500px;
+    max-width: 100%;
     cursor: pointer;
     border-radius: 20px;
     margin: auto;
     display: block;
     margin-top: 40px;
+}
+
+.car-image {
+    max-height: 600px;
+    object-fit: contain; 
+}
+
+.contact-image {
+    width: 100%;
+    border-radius: 20px;
+    margin: auto;
 }
 
 .center {
@@ -75,10 +88,6 @@ p {
     margin: 5px;
 }
 
-.car-image {
-    max-height: 600px;
-    object-fit: contain;
-}
 
 /* BUTTONS */ 
 
@@ -107,7 +116,7 @@ button:hover {
     place-items: center;
 }
 
-@media(max-width:768px){
+@media(max-width:1000px){
 
     .about-section {
         background-color: #FFF4F4;
@@ -155,9 +164,8 @@ button:hover {
 
 @media(max-width:767px){
     .reci {
-        display: grid;
-        grid-template-columns: 1fr;
-        place-items: center;
+        display: flex;
+       flex-direction: column;
     }
 }
     

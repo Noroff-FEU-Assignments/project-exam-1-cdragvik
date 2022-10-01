@@ -2,6 +2,7 @@ const url = "https://frankieskitchen.cdragvik.one/wp-json/wp/v2/posts?per_page=1
 const carouselContainer = document.querySelector(".slideshow-container");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
+const loader = document.querySelector(".loader");
 
 async function latestPosts(){
     try{
@@ -36,6 +37,7 @@ async function latestPosts(){
                 slides[slideIndex-1].style.display = "block";
             }
         }
+        loader.style.display ="none";
     } catch(error){
         console.log(error);
         carouselContainer.innerHTML = `<div class="error">Ups! An error has occured. Please try again later.</div>`;

@@ -13,12 +13,8 @@ h2 {
 }
 
 p {
-    padding: 20px;
+    padding-bottom: 20px;
     max-width: 1000px;
-}
-
-.par {
-    margin: auto;
 }
 
 .section {
@@ -68,8 +64,8 @@ p {
 }
 
 .car-image {
-    max-height: 600px;
-    object-fit: contain; 
+    max-height: 500px; 
+    padding: 20px;
 }
 
 .contact-image {
@@ -94,19 +90,18 @@ p {
 button {
     margin: 20px auto;
     border-radius: 20px;
-    border: 0.5px solid black;
-    padding: 10px;
-    background-color: #e6fefe;
+    border: none;
+    padding: 15px;
+    background-color: #d8f4ed;
     text-transform: uppercase;
     text-align: center;
     display: flex;
 }
 
 button:hover {
-    background-color: #bbfcfc;
-    transition-duration: 1s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    
 }
-
 
 /* ABOUT PAGE */
 

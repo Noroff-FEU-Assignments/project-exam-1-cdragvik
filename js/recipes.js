@@ -12,8 +12,8 @@ async function getRecipes(){
         const response = await fetch(url);
         const getRecipes = await response.json();
         console.log(getRecipes);
-        const maxpages = response.headers.get("x-wp-totalpages");
-        if (Number(maxpages) === currentPage) {
+        const allpages = response.headers.get("x-wp-totalpages");
+        if (Number(allpages) === currentPage) {
             loadmore.style.display = "none"; 
         }
         loader.style.display ="none";
@@ -22,7 +22,7 @@ async function getRecipes(){
             function createHTML(getRecipes){
                 recipesContainer.innerHTML += `<div class="recipes">
                     <a href="blogpost.html?id=${getRecipes[i].id}"><div class="recipes-box"> 
-                    <img src="${getRecipes[i].better_featured_image.source_url}" class="image">
+                    <img src="${getRecipes[i].better_featured_image.source_url}" class="image" alt="Cooked food from recipe">
                     <h2>${getRecipes[i].title.rendered}</h2>
                     </div></a>
                     </div>`;

@@ -26,7 +26,7 @@ async function details() {
 
         blogContainer.innerHTML += `<div class="section"> 
                                     <h1>${res.title.rendered}</h1>
-                                    <img src="${res.better_featured_image.source_url}" onclick="onClick(this)" class="modal-hover-opacity res-image">
+                                    <img src="${res.better_featured_image.source_url}" onclick="onClick(this)" class="modal-hover-opacity res-image" alt="Food cooked based on recipe">
                                     <div id="modal" class="modal" onclick="this.style.display='none'">
                                         <span class="close">&times;&nbsp;&nbsp;&nbsp;</span>
                                         <div class="modal-content">

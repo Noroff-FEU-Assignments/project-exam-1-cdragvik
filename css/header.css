@@ -4,6 +4,7 @@
     font-family: 'avenir next', Arial, Helvetica, sans-serif;
     font-size: 20px;
     box-sizing: border-box;
+    color: rgba(41, 23, 8, 0.8);
 }
 
 .logo {
@@ -43,8 +44,8 @@ a{
     transition: 0.7s ease;
 }
 
-.nav-link:hover {
-    background-color: #e6fefe;
+.nav-link:hover, .onsite {
+    background-color: #d8f4ed;
     padding: 10px;
     border-radius: 20px;
 }
@@ -93,7 +94,7 @@ body {
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        background-color: #e6fefe;
+        background-color: #d8f4ed;
     }
 
     .nav-item {
